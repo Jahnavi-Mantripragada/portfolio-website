@@ -1,0 +1,232 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #E0E0E0; /* Light gray text */
+    background-color: #1F1F1F; /* Dark gray background */
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Header */
+header {
+    background: #000000; /* Pure black */
+    color: #FFFFFF; /* White text */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+header nav a {
+    color: #FFFFFF; /* White links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #FFA500; /* Vibrant orange hover */
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(135deg, #000000, #1F1F1F); /* Subtle gradient */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#hero h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#hero h2 span {
+    color: #007BFF; /* Highlighted blue */
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    line-height: 1.8;
+}
+
+#hero .btn {
+    display: inline-block;
+    background: #007BFF; /* Deep blue button */
+    color: #FFFFFF; /* White text */
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#hero .btn:hover {
+    background: #FFA500; /* Vibrant orange hover */
+    transform: translateY(-5px);
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1F1F1F; /* Dark background for consistency */
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #FFFFFF; /* White headings */
+}
+
+/* Projects Section */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    width: 220px;
+    height: 120px;
+    background: #2A2A2A; /* Slightly lighter gray */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #E0E0E0; /* Light gray text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Section */
+form input, form textarea {
+    background: #2A2A2A; /* Slightly lighter background */
+    color: #E0E0E0; /* Light gray text */
+    border: 1px solid #007BFF; /* Deep blue border */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+form button {
+    background: #007BFF; /* Deep blue button */
+    color: #FFFFFF; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background: #FFA500; /* Vibrant orange hover */
+    transform: translateY(-5px);
+}
+
+/* Floating Connect Icon */
+.connect-icon {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background: #007BFF; /* Deep blue */
+    color: #FFFFFF; /* White icon */
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+    z-index: 1000;
+}
+
+.connect-icon:hover {
+    background: #FFA500; /* Vibrant orange hover */
+}
+
+/* Go to Top Button */
+#go-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background: #007BFF; /* Deep blue button */
+    color: #FFFFFF; /* White arrow */
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: background 0.3s ease, transform 0.3s ease;
+    display: flex;
+}
+
+#go-to-top:hover {
+    background: #FFA500; /* Vibrant orange hover */
+    transform: scale(1.1);
+}
+
+/* Logo Styles (No Background Issue) */
+.company-logo, .institution-logo {
+    width: 100px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Spacing below logo */
+    background: none; /* Ensures no background is applied */
+    border: none; /* Removes any borders */
+    box-shadow: none; /* No shadows if background is interfering */
+    transition: transform 0.3s ease;
+}
+
+.company-logo:hover, .institution-logo:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+
+
+/* Align Logos with Content */
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
